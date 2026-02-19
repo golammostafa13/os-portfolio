@@ -190,28 +190,24 @@ const blogPosts = [
 
 const techStack = [
   {
-    category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    category: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "C++"],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    category: "Frameworks",
+    items: ["React.js", "Next.js", "Redux", "Shadcn UI", "RTK", "Tailwind CSS", "Three.js"],
   },
   {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    category: "Backend & DB",
+    items: ["Node.js", "Express.js", "FastAPI", "REST API", "PostgreSQL", "MongoDB", "Nginx", "Redis", "RabbitMQ", "WebSocket"],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    category: "DevOps",
+    items: ["Burp Suite", "Git & GitHub", "Microservices", "JWT Auth", "CI/CD", "Docker", "TCP/IP, DNS, LB"],
   },
   {
-    category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
-  },
-  {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "Coursework",
+    items: ["DSA", "OOP", "OS", "AI", "Networking", "Cyber Security", "System Design", "DBMS"],
   },
 ];
 
