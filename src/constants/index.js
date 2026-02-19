@@ -70,7 +70,7 @@ const dockApps = [
     id: "trash",
     name: "Archive", // was "Trash"
     icon: "trash.png",
-    canOpen: false,
+    canOpen: true,
   },
 ];
 const blogPosts = [
@@ -221,28 +221,28 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/golammostafa13",
   },
   {
     id: 2,
     text: "Platform",
     icon: "/icons/atom.svg",
     bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    link: "https://os-portfolio-mauve.vercel.app/",
   },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
     bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://x.com/MostafaRmstu",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/golam-mostafa-09b7811b7/recent-activity/all/",
   },
 ];
 
@@ -277,19 +277,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal1.jpeg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal2.jpeg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal3.jpeg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal4.jpeg",
   },
 ];
 
@@ -486,7 +486,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "https://avatars.githubusercontent.com/u/57527888?v=4",
     },
     {
       id: 2,
@@ -495,16 +495,16 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/casual-me.jpg",
     },
     {
       id: 3,
-      name: "conference-me.png",
+      name: "office-me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/office-snack.jpeg",
     },
     {
       id: 4,
@@ -514,10 +514,10 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "https://avatars.githubusercontent.com/u/57527888?v=4",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
+        "Hey! I’m Golam Mostafa 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "I specialize in JavaScript, React, Next.js, Express.js, FastAPI—and I love making things feel smooth, fast, and just a little bit delightful.",
         "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
         "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
       ],
@@ -588,6 +588,7 @@ const WINDOW_CONFIG = {
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  trash: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };

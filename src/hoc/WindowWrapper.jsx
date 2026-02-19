@@ -16,12 +16,12 @@ const WindowWrapper = (Component, windowKey) => {
 
             el.style.display = "block";
             gsap.fromTo(
-                el, { 
-                    scale: 0.8, 
-                    opacity: 0,
-                    y: 40
-                }, 
-                { 
+                el, {
+                scale: 0.8,
+                opacity: 0,
+                y: 40
+            },
+                {
                     scale: 1,
                     opacity: 1,
                     y: 0,
@@ -34,7 +34,14 @@ const WindowWrapper = (Component, windowKey) => {
         useGSAP(() => {
             const el = ref.current;
             if (!el) return;
-            const [instance] = Draggable.create(el, { onPress: () => focusWindow(windowKey) });
+            const [instance] = Draggable.create(el, {
+                onPress: () => focusWindow(windowKey),
+                dragClickables: false,
+                clickableTest: (el) => {
+                    const tag = el.tagName.toLowerCase();
+                    return ['input', 'textarea', 'select', 'button', 'a', 'label'].includes(tag);
+                }
+            });
             return () => instance.kill();
         }, [])
 

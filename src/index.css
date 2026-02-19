@@ -7,7 +7,7 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
+  background-image: url("/images/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,6 +234,36 @@ body {
         }
       }
     }
+
+    /* ── Mail form ── */
+    .contact-field {
+      @apply flex flex-col gap-1;
+
+      label {
+        @apply text-xs font-medium text-gray-500;
+      }
+
+      input,
+      textarea {
+        @apply w-full text-sm border border-gray-200 rounded-lg px-3 py-2 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all resize-none placeholder:text-gray-300;
+      }
+    }
+
+    .contact-status {
+      @apply flex items-center gap-2 text-xs font-medium px-3 py-2 rounded-lg;
+
+      &.success {
+        @apply bg-green-50 text-green-700;
+      }
+
+      &.error {
+        @apply bg-red-50 text-red-600;
+      }
+    }
+
+    .contact-submit {
+      @apply w-full flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-700 text-white text-sm font-medium py-2.5 rounded-lg transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer;
+    }
   }
 
   #photos {
@@ -390,6 +420,52 @@ body {
         p {
           @apply text-sm text-white text-center px-1 rounded-md group-hover:bg-blue-500 transition-colors max-w-40;
         }
+      }
+    }
+  }
+
+  #trash {
+    @apply w-md absolute top-28 left-1/3 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+
+    #window-header {
+      h2 {
+        @apply font-bold text-sm text-center flex-1;
+      }
+    }
+
+    .trash-count {
+      @apply text-xs text-gray-400 font-normal;
+    }
+
+    .trash-empty-state {
+      @apply flex flex-col items-center justify-center gap-2 py-14 text-gray-400;
+
+      p {
+        @apply text-sm font-medium;
+      }
+    }
+
+    .trash-content {
+      @apply bg-white p-5 overflow-y-auto max-h-[50vh];
+    }
+
+    .trash-grid {
+      @apply flex flex-wrap gap-5 justify-center;
+    }
+
+    .trash-item {
+      @apply flex flex-col items-center gap-1 cursor-pointer w-24 p-2 rounded-lg hover:bg-blue-50 transition-colors duration-150;
+
+      .trash-thumb {
+        @apply size-20 rounded-md overflow-hidden bg-gray-100;
+
+        img {
+          @apply size-full object-cover group-hover:scale-105 transition-transform duration-200;
+        }
+      }
+
+      p {
+        @apply text-[11px] text-gray-700 text-center leading-tight line-clamp-2 w-full;
       }
     }
   }
